@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import tip_return from '../images/tip-return.jpg'
 import loader from '../images/loader3.gif';
 import Button from 'react-bootstrap/Button';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import visa_image from '../images/visa.png';
 import master_image from '../images/logo.png';

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import loader from '../images/loader3.gif';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import check_logo from '../images/check-verified.png';
 import ToastContainer from 'react-bootstrap/ToastContainer';

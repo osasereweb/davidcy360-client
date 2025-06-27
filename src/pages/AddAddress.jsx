@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef, useState, useMemo } from 'react'
 import { useNavigate } from "react-router-dom";
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import loader from '../images/loader3.gif';
 import Button from 'react-bootstrap/Button';

@@ -4,7 +4,7 @@ import loader from '../images/loader3.gif';
 import Button from 'react-bootstrap/Button';
 import bg1 from '../images/bg-1.jpg';
 import circle from '../images/circle.png';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import check_logo from '../images/check-verified.png';
 import ToastContainer from 'react-bootstrap/ToastContainer';

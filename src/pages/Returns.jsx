@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import supportLoc from '../images/support-loc.jpg'
 import supportPac from '../images/support-pac.jpg'
 import supportRet from '../images/support-ret.jpg'
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';

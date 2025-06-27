@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Accordion from 'react-bootstrap/Accordion';
 import { faqs } from '../dataSet/faqs';

@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import Footer from '../components/footer';
-import Header from '../components/Header';
-import bg1 from '../images/bg-1.jpg';
+
 import deleteIcon from '../images/trash.png';
 import { CartContext } from '../App';
 import Button from 'react-bootstrap/Button';

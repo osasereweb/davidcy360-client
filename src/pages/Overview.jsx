@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import tipCall from '../images/tip-call.png'
 import tipWhatsapp from '../images/tip-whatsapp.png'
 import tipEmail from '../images/tip-email.png'
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 
