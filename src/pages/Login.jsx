@@ -10,7 +10,7 @@ import loader from '../images/loader3.gif';
 
 function Login() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const [userCart,
         setuserCart,

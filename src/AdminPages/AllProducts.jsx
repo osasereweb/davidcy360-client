@@ -15,7 +15,7 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 
 function AllProducts() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const navigate = useNavigate();
 

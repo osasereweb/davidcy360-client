@@ -7,7 +7,7 @@ import { faqs } from '../dataSet/faqs';
 
 function Faqs() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const [allFaqs, setallFaqs] = useState([])
 

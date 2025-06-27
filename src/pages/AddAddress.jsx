@@ -14,7 +14,7 @@ import countryList from 'react-select-country-list'
 
 function AddAddress() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     let windowHeight = window.innerHeight;
 

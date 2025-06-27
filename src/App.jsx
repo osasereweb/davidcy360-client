@@ -39,7 +39,7 @@ export const CartContext = createContext();
 
 function App() {
 
-  let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+  let base_url = import.meta.env.SERVER_URL;
 
   const [userCart, setuserCart] = useState([]);
   const [userWishList, setuserWishList] = useState([]);

@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 function Sales() {
 
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
 
     const navigate = useNavigate();

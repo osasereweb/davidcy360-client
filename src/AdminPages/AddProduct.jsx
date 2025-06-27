@@ -15,7 +15,7 @@ import check_logo from '../images/check-verified.png';
 
 function AddProduct() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const [showA, setShowA] = useState(false);
     const toggleShowA = () => setShowA(!showA);

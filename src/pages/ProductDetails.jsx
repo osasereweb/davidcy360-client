@@ -49,7 +49,7 @@ function ProductDetails() {
     const location = useLocation();
 
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     useEffect(() => {
         window.scrollTo(0, 0);

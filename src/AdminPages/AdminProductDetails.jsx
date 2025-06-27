@@ -14,7 +14,7 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 
 function AdminProductDetails() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const location = useLocation();
 

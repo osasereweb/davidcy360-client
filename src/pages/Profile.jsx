@@ -13,7 +13,7 @@ import { CartContext } from '../App';
 
 function Profile() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const navigate = useNavigate();
 

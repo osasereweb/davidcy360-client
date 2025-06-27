@@ -12,7 +12,7 @@ import loader from '../images/loader3.gif';
 
 function AdminLogin() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
 
     const [gifLoading, setgifLoading] = useState(false);

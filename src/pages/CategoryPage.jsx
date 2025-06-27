@@ -3,16 +3,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import bg1 from '../images/bg-1.jpg';
 import loader from '../images/loader3.gif';
-import deleteIcon from '../images/trash.png';
-import { CartContext } from '../App';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import ToastContainer from 'react-bootstrap/ToastContainer';
-import Toast from 'react-bootstrap/Toast';
-import check_logo from '../images/check-verified.png';
-import Modal from 'react-bootstrap/Modal';
-import cartClipArt from '../images/cartClipArt.png';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
@@ -22,7 +12,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function CategoryPage() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const navigate = useNavigate();
 

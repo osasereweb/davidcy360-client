@@ -13,7 +13,7 @@ import Select from 'react-select'
 
 function PackageDetails() {
 
-    let base_url = import.meta.env.SERVER_URL || 'http://localhost:3000';
+    let base_url = import.meta.env.SERVER_URL;
 
     const location = useLocation();
 
