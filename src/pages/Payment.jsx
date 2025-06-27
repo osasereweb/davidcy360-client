@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import check_logo from '../images/check-verified.png';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 function Payment() {
