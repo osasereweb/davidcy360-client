@@ -15,6 +15,9 @@ function Profile() {
 
     let base_url = import.meta.env.SERVER_URL;
 
+
+    console.log(base_url)
+
     const navigate = useNavigate();
 
     const [userData, setuserData] = useState({});

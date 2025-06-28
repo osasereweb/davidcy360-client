@@ -14,6 +14,8 @@ function Home() {
 
     let base_url = import.meta.env.SERVER_URL;
 
+    console.log(base_url)
+
     const navigate = useNavigate();
 
 
@@ -64,6 +66,9 @@ function Home() {
     const [currentCurrency, setcurrentCurrency] = useState({});
 
     const getSettings = async () => {
+
+
+        console.log(`${base_url}/davidcy360/all-settings`)
 
         const res = await fetch(`${base_url}/davidcy360/all-settings`, {
             withCredntials: true,
