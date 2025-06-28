@@ -18,7 +18,7 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 
 function Settings() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     const [showA, setShowA] = useState(false);
     const toggleShowA = () => setShowA(!showA);

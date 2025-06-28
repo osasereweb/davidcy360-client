@@ -49,7 +49,7 @@ function ProductDetails() {
     const location = useLocation();
 
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     useEffect(() => {
         window.scrollTo(0, 0);

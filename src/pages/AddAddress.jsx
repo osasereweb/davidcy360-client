@@ -14,7 +14,7 @@ import countryList from 'react-select-country-list'
 
 function AddAddress() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     let windowHeight = window.innerHeight;
 

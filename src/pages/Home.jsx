@@ -12,9 +12,8 @@ import loader from '../images/loader3.gif';
 
 function Home() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
-    console.log(base_url)
 
     const navigate = useNavigate();
 
@@ -66,9 +65,6 @@ function Home() {
     const [currentCurrency, setcurrentCurrency] = useState({});
 
     const getSettings = async () => {
-
-
-        console.log(`${base_url}/davidcy360/all-settings`)
 
         const res = await fetch(`${base_url}/davidcy360/all-settings`, {
             withCredntials: true,

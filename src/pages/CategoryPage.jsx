@@ -12,7 +12,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function CategoryPage() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     const navigate = useNavigate();
 

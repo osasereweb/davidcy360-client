@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Admin() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     const navigate = useNavigate();
 

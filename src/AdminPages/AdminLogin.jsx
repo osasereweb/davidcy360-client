@@ -12,7 +12,7 @@ import loader from '../images/loader3.gif';
 
 function AdminLogin() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
 
     const [gifLoading, setgifLoading] = useState(false);

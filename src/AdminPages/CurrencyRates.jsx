@@ -14,7 +14,7 @@ import check_logo from '../images/check-verified.png';
 
 function CurrencyRates() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     const navigate = useNavigate();
 

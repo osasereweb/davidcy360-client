@@ -13,7 +13,7 @@ import Select from 'react-select'
 
 function PackageDetails() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
     const location = useLocation();
 

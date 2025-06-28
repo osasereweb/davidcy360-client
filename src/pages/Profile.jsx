@@ -13,10 +13,8 @@ import { CartContext } from '../App';
 
 function Profile() {
 
-    let base_url = import.meta.env.SERVER_URL;
+    let base_url = `https://davidcy360-server.onrender.com`;
 
-
-    console.log(base_url)
 
     const navigate = useNavigate();
 
