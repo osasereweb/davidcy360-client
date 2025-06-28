@@ -73,7 +73,7 @@ function App() {
         localStorage.setItem("storedCurrencyArray", JSON.stringify(data.data[0].currencyRates));
       }
       if (storedCurrentCurrency === null) {
-        localStorage.setItem("storedCurrentCurrency", JSON.stringify(data.data[0].currencyRates[1]));
+        localStorage.setItem("storedCurrentCurrency", JSON.stringify(data.data[0].currencyRates[0]));
       }
 
       data.data[0].currencyRates.map((item, index) => {

@@ -124,7 +124,7 @@ function ViewAllAddress() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
             <Header />
 
@@ -256,7 +256,7 @@ function ViewAllAddress() {
 
             <Footer />
 
-        </>
+        </div>
     )
 }
 

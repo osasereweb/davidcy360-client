@@ -132,7 +132,7 @@ function EditProfile() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
             <div>
@@ -289,7 +289,7 @@ function EditProfile() {
             </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 

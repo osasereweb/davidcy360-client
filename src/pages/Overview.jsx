@@ -10,7 +10,7 @@ function Overview() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
             <div className="container px-4 py-5 mt-3" id="featured-3">
@@ -108,7 +108,7 @@ function Overview() {
             {/* footer  */}
             <Footer />
 
-        </>
+        </div>
     )
 }
 

@@ -10,6 +10,9 @@ function ProductCard({ product }) {
 
     const navigate = useNavigate();
 
+    let windowHeight = window.innerHeight;
+    let windowWidth = window.innerWidth;
+
 
     const [
         userCart,

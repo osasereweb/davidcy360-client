@@ -147,7 +147,7 @@ function ChangePassword() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
             <Header />
 
@@ -295,7 +295,7 @@ function ChangePassword() {
 
             <Footer />
 
-        </>
+        </div>
     )
 }
 

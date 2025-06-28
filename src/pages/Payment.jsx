@@ -7,7 +7,7 @@ import Header from '../components/Header';
 
 function Payment() {
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
             <div className='my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -37,7 +37,7 @@ function Payment() {
             </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 

@@ -113,7 +113,7 @@ function Profile() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
             <div>
@@ -295,7 +295,7 @@ function Profile() {
             </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 

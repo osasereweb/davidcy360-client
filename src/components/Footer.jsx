@@ -39,11 +39,11 @@ function Footer() {
 
 
     return (
-        <>
+        <div style={{ marginTop: 'auto' }}>
 
             {
                 (modalIsOpen) ?
-                    <div style={{ position: 'fixed', color: 'white', width: 300, top: windowHeight - 310, left: windowWidth - 380, backgroundColor: '#000000', borderRadius: 16, padding: 15, animation: 'ease-in-out' }}>
+                    <div style={{ position: 'fixed', width: 260, color: 'white', top: windowHeight - 295, left: windowWidth - 305, backgroundColor: '#000000', borderRadius: 16, padding: 15, animation: 'ease-in-out' }}>
                         {/* modal / */}
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
@@ -83,7 +83,7 @@ function Footer() {
             }
 
 
-            <div onClick={toggleModal} style={{ position: 'fixed', border: '1px solid grey', width: 51.5, height: 51.5, borderRadius: 50, top: windowHeight - 100, left: windowWidth - 120, cursor: 'pointer' }}>
+            <div onClick={toggleModal} style={{ position: 'fixed', border: '1px solid grey', width: 51.5, height: 51.5, borderRadius: 50, top: windowHeight - 90, left: windowWidth - 90, cursor: 'pointer' }}>
                 <img
                     src={logo}
                     width="50"
@@ -136,12 +136,12 @@ function Footer() {
                     </div>
 
                     <div className="d-flex flex-column flex-sm-row justify-content-center py-2 my-2 border-top ">
-                        <p>&copy; 2025 Company, Inc. All rights reserved.</p>
+                        <p>&copy; 2025 DavidCy360, Inc. All rights reserved.</p>
                     </div>
                 </footer>
             </div>
 
-        </>
+        </div>
     )
 }
 

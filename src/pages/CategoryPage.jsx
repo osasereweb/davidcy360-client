@@ -89,7 +89,7 @@ function CategoryPage() {
 
 
     const handlescroll = () => {
-        if ((window.innerHeight + document.documentElement.scrollTop + 1) >= (document.documentElement.scrollHeight) - 480) {
+        if ((window.innerHeight + document.documentElement.scrollTop + 1) >= (document.documentElement.scrollHeight) - 600) {
             setisLoadingMoreProducts(true);
             let newNumber = page + 1;
             setpage(newNumber);
@@ -118,22 +118,22 @@ function CategoryPage() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
             <Header />
 
             <div className='container-fluid pt-4 pb-5 px-3 bg-light'>
                 <div className='my-2 mx-5' style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-                    <div style={{ color: 'grey', fontWeight: 'bold', fontSize: 18, fontFamily: 'serif' }}>category: {category}</div>
+                    <div style={{ color: 'grey', fontWeight: 'bold', fontSize: 14, fontFamily: 'serif' }}>category: {category}</div>
                 </div>
 
                 {
                     (stableFilteredProducts.length === 0) ?
                         <div style={{ marginTop: 80, marginBottom: 150, textAlign: 'center', fontSize: 22 }}>No product in this category has been added yet!</div>
                         :
-                        <div>
-                            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                                <div style={{ width: '35%' }}>
+                        <div >
+                            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', width: '80%', margin: 'auto' }}>
+                                <div style={{ flexGrow: 1, flex: 1 }}>
                                     <input
                                         name="searchTerm"
                                         placeholder='Search product by name'
@@ -147,9 +147,9 @@ function CategoryPage() {
                                 </div>
 
                                 <div className='mx-2'>
-                                    <Dropdown>
+                                    <Dropdown >
                                         <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                            Sort by option
+                                            Sort
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
@@ -234,7 +234,7 @@ function CategoryPage() {
             <Footer />
 
 
-        </>
+        </div>
     )
 }
 

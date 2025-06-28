@@ -137,7 +137,7 @@ function Home() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
 
@@ -154,6 +154,7 @@ function Home() {
                                 height={windowHeight - navheight}
                                 className="d-inline-block"
                                 alt="cart"
+                                style={{ objectFit: 'cover' }}
                             />
                             <Carousel.Caption style={{
                                 // position: 'absolute',
@@ -190,7 +191,7 @@ function Home() {
                 </div>
 
                 <div className='my-5' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Button variant="dark">
+                    <Button variant="outline-dark">
                         {
                             (isLoaingMoreProducts) ?
                                 <img
@@ -218,7 +219,7 @@ function Home() {
                     <h2>About Us</h2>
                 </div>
 
-                <p className='pt-3 pb-5 px-5' style={{ margin: 'auto', lineHeight: 2.5, width: '80%' }} >
+                <p className='pt-3 pb-5 px-2' style={{ margin: 'auto', lineHeight: 2.5, width: '80%' }} >
                     {aboutUs}
                 </p>
             </div>
@@ -226,7 +227,7 @@ function Home() {
             {/* footer  */}
             <Footer />
 
-        </>
+        </div>
     )
 }
 

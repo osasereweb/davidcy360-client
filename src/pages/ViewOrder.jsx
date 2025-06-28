@@ -156,7 +156,7 @@ function ViewOrder() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
             <Header />
 
@@ -361,7 +361,7 @@ function ViewOrder() {
 
             <Footer />
 
-        </>
+        </div>
     )
 }
 

@@ -272,6 +272,7 @@ function Header() {
                         height="50"
                         className="d-inline-block align-top"
                         alt="davidcy360 logo"
+                        style={{ borderRadius: 50 }}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

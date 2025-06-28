@@ -365,22 +365,22 @@ function CartPage() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
 
-            <div className="container px-4 py-5 mt-2" id="featured-3">
+            <div className="container px-4 py-5 mt-2" id="featured-3" style={{ marginTop: 'auto' }}>
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-2">
                     <div className="feature col-lg-3">
                         <div className="mt-0 mb-2">
                             <Card className='bg-light' style={{ width: '18rem' }}>
                                 <Card.Body>
-                                    <Card.Title>Ordr Details</Card.Title>
+                                    <Card.Title>Order Details</Card.Title>
                                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 30 }}>
-                                        <div style={{ fontWeight: 'bold' }}>Total </div>
+                                        <div style={{ fontWeight: 'bold', color: 'grey' }}>Total </div>
                                         <div>{currencyRate.sign}{(totalAmount / Number(currencyRate.rate)).toFixed(2)}</div>
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 20 }}>
-                                        <div style={{ fontWeight: 'bold' }}>Shipping Fee </div>
+                                        <div style={{ fontWeight: 'bold', color: 'grey' }}>Shipping Fee </div>
                                         <div>{currencyRate.sign}{(userShippingFee / Number(currencyRate.rate)).toFixed(2)}</div>
                                     </div>
                                     <div style={{ textAlign: 'center', marginTop: 40 }}>
@@ -421,11 +421,11 @@ function CartPage() {
                                 </Card.Body>
                             </Card>
 
-                            <div className='mt-3 p-2' style={{ border: '1px solid grey', borderRadius: 12, width: 'fit-content' }}>
+                            <div className='mt-3 p-1' style={{ border: '1px solid grey', borderRadius: 12, width: 'fit-content' }}>
                                 <img
                                     src={paystack_img}
-                                    width={120}
-                                    height="15"
+                                    width={105}
+                                    height="13"
                                     className="d-inline-block"
                                     style={{ borderRadius: 12 }}
                                     alt="loader"
@@ -567,6 +567,7 @@ function CartPage() {
                                                                         top: '50%',
                                                                         transform: 'translate(-50%, -50%)'
                                                                     }}
+                                                                    className='px-2'
                                                                 >
                                                                     {currencyRate.sign}{((Number(item.price) * Number(item.quantity)) / Number(currencyRate.rate)).toFixed(2)}
                                                                 </div>
@@ -581,7 +582,7 @@ function CartPage() {
                                                                         transform: 'translate(-50%, -50%)'
                                                                     }}
                                                                 >
-                                                                    {item.selectedColor}
+                                                                    {item.color}
                                                                 </div>
                                                             </td>
 
@@ -594,7 +595,7 @@ function CartPage() {
                                                                         transform: 'translate(-50%, -50%)'
                                                                     }}
                                                                 >
-                                                                    {item.selectedSize}
+                                                                    {item.size}
                                                                 </div>
                                                             </td>
 
@@ -708,8 +709,7 @@ function CartPage() {
             </div>
 
             <Footer />
-
-        </>
+        </div>
     )
 }
 

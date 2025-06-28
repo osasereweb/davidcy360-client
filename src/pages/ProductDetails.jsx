@@ -349,7 +349,8 @@ function ProductDetails() {
 
 
     return (
-        <>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+
             <Header />
 
             <div style={{
@@ -357,34 +358,37 @@ function ProductDetails() {
                 display: "flex",
                 justifyContent: 'centre',
                 alignItems: 'center',
-                flexDirection: 'column'
+                flexDirection: 'column',
             }}
             // className='bg-light'
             >
                 <div style={{
-                    width: '75%',
+                    width: '70%',
                     marginTop: 50,
                     marginBottom: 50,
                     display: 'flex',
-                    flexDirection: 'row'
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center'
                 }}>
 
                     <div>
-                        <div className="mx-3" style={{}}>
+                        <div className="mx-2" style={{}}>
                             <div style={{
-                                width: 400,
+                                width: "22rem",
                                 // backgroundColor: '#80808020'
                             }}>
-                                <Carousel useKeyboardArrows={false} showArrows={false} showStatus={false} showIndicators={false}>
+                                <Carousel useKeyboardArrows={false} showArrows={true} showStatus={false} showIndicators={true}>
                                     {location.state.url.map((URL, index) => (
                                         <div key={index} className="slide" >
-                                            {/* <img
+                                            <img
                                                 key={index}
-                                                src={URL}
+                                                src={URL.link}
                                                 className="d-inline-block"
                                                 alt="cart"
-                                            /> */}
-                                            <Container
+                                            />
+                                            {/* useKeyboardArrows={false} showArrows={true} showStatus={false} showIndicators={false} */}
+                                            {/* <Container
                                                 ref={containerRef}
                                                 onMouseEnter={handleMouseEnter}
                                                 onMouseLeave={handleMouseLeave}
@@ -398,7 +402,7 @@ function ProductDetails() {
                                                     offset={offset}
                                                     source={URL.link}
                                                 />
-                                            </Container>
+                                            </Container> */}
                                         </div>
                                     ))}
                                 </Carousel>
@@ -486,7 +490,7 @@ function ProductDetails() {
 
                             <div style={{ width: '100%', margin: 'auto', marginTop: 50, marginBottom: 20, display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center' }}>
                                 <div >
-                                    <Button variant="outline-primary" size='md' className='w-100'
+                                    <Button variant="outline-primary" size='sm' className='w-100'
                                         onClick={() => {
                                             carted ? removeCart(location.state.id) : addCart()
                                         }}
@@ -501,7 +505,7 @@ function ProductDetails() {
                                     </Button>
                                 </div>
                                 <div className='mx-3'>
-                                    <Button variant="dark" size='md' className='w-100'
+                                    <Button variant="dark" size='sm' className='w-100'
                                         onClick={() => {
                                             wished ? removeWishList(location.state.id) : addWishList()
                                         }}
@@ -634,7 +638,7 @@ function ProductDetails() {
             </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 
