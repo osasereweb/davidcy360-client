@@ -49,7 +49,9 @@ function ProductCard({ product }) {
                     state: {
                         id: product.id, name: product.name, description: product.description, price: product.price, currency: product.currency, quantity: product.quantity, url: product.url, sizes: product.sizes, weight: product.weight, soldOut: product.soldOut, category: product.category, colors: product.colors, urlLarge: product.urlLarge
                     }
+
                 })
+                window.location.reload()
             }}
         >
             <img

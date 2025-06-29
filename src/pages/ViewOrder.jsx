@@ -116,7 +116,7 @@ function ViewOrder() {
                                 email: userEmail
                             }
 
-                            const res = await fetch(`${base_url}http://localhost:3000/edith/cancel-cart-orders`, {
+                            const res = await fetch(`${base_url}/edith/cancel-cart-orders`, {
                                 withCredntials: true,
                                 credentials: 'include',
                                 method: 'POST',

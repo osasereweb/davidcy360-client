@@ -276,6 +276,7 @@ function ProductDetails() {
         setOpacity(0);
     };
 
+
     const handleMouseMove = (e) => {
         const targetRect = targetRef.current.getBoundingClientRect();
         const sourceRect = sourceRef.current.getBoundingClientRect();
@@ -375,7 +376,7 @@ function ProductDetails() {
                     <div>
                         <div className="mx-2" style={{}}>
                             <div style={{
-                                width: "22rem",
+                                width: "20rem",
                                 // backgroundColor: '#80808020'
                             }}>
                                 <Carousel useKeyboardArrows={false} showArrows={true} showStatus={false} showIndicators={true}>
@@ -444,7 +445,7 @@ function ProductDetails() {
                             </div>
 
                             <div style={{ marginTop: 15 }}>
-                                <div style={{ fontSize: 17 }}>Availale size(s) (select size)</div>
+                                <div style={{ fontSize: 17 }}>Availale sizes</div>
                                 <div style={{ marginTop: 10, display: 'flex', alignItems: 'center' }}>
                                     {
                                         location.state.sizes.map((item, index) => {
@@ -461,7 +462,7 @@ function ProductDetails() {
                             </div>
 
                             <div style={{ marginTop: 15 }}>
-                                <div style={{ fontSize: 17 }}>Available color(s) (select color)</div>
+                                <div style={{ fontSize: 17 }}>Available colors</div>
                                 <div style={{ marginTop: 10, display: 'flex', alignItems: 'center' }}>
                                     {
                                         location.state.colors.map((item, index) => {

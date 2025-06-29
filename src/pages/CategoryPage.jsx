@@ -89,7 +89,7 @@ function CategoryPage() {
 
 
     const handlescroll = () => {
-        if ((window.innerHeight + document.documentElement.scrollTop + 1) >= (document.documentElement.scrollHeight) - 600) {
+        if ((window.innerHeight + document.documentElement.scrollTop + 1) >= (document.documentElement.scrollHeight) - 800) {
             setisLoadingMoreProducts(true);
             let newNumber = page + 1;
             setpage(newNumber);
@@ -122,7 +122,7 @@ function CategoryPage() {
 
             <Header />
 
-            <div className='container-fluid pt-4 pb-5 px-3 bg-light'>
+            <div className='container-fluid pt-4 pb-5 px-3'>
                 <div className='my-2 mx-5' style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                     <div style={{ color: 'grey', fontWeight: 'bold', fontSize: 14, fontFamily: 'serif' }}>category: {category}</div>
                 </div>

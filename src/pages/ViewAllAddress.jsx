@@ -145,7 +145,7 @@ function ViewAllAddress() {
                         :
                         <>
 
-                            <div className="container px-4 py-5 mt-5 mb-5" id="featured-3">
+                            <div className="container px-2 py-5 mt-5 mb-5 w-100" id="featured-3">
                                 <h5 className="pb-2 border-bottom">My Address</h5>
                                 <div className="row g-4 py-2 row-cols-1 row-cols-lg-3">
                                     <div className="feature col w-100">
@@ -154,7 +154,7 @@ function ViewAllAddress() {
                                                 {
                                                     (Object.keys(userData).length > 0 && userData.address.length > 0) ?
                                                         <div className="table-responsive">
-                                                            <table className="table table-striped table-sm">
+                                                            <table className="table table-striped table-lg">
                                                                 <thead>
                                                                     <tr>
                                                                         <th scope="col">Address</th>
@@ -189,16 +189,16 @@ function ViewAllAddress() {
                                                                                             (gifLoading) ?
                                                                                                 <img
                                                                                                     src={loader}
-                                                                                                    width={20}
-                                                                                                    height={20}
+                                                                                                    width={18}
+                                                                                                    height={18}
                                                                                                     className="d-inline-block"
                                                                                                     alt="delete"
                                                                                                 />
                                                                                                 :
                                                                                                 <img
                                                                                                     src={deleteIcon}
-                                                                                                    width={20}
-                                                                                                    height={20}
+                                                                                                    width={18}
+                                                                                                    height={18}
                                                                                                     className="d-inline-block"
                                                                                                     alt="delete"
                                                                                                     style={{ cursor: 'pointer' }}
